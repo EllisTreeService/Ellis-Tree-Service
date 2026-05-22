@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="View photos of Ellis Tree Service's work across Southern Illinois — tree removal, trimming, stump grinding, and emergency cleanup projects."/>
+  <title>Gallery | Ellis Tree Service</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .gallery-section { padding: 80px 0; }
+    .gallery-inner { max-width: 1140px; margin: 0 auto; padding: 0 40px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .gallery-item .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      transition: opacity 0.2s;
+      font-size: 11px;
+    }
+    .gallery-item:nth-child(4) { grid-column: span 2; }
+    .gallery-item:nth-child(4) .photo-placeholder { aspect-ratio: 2/1; }
+    .gallery-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(26,46,18,0.85);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .gallery-item:hover .gallery-label { opacity: 1; }
+    .gallery-item:hover .photo-placeholder { opacity: 0.9; }
+
+    .gallery-filter {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .filter-btn {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border: 1px solid var(--border);
+      background: #fff;
+      cursor: pointer;
+      color: var(--gray);
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--green-dark);
+      color: #fff;
+      border-color: var(--green-dark);
+    }
+
+    .instagram-strip {
+      background: var(--cream);
+      padding: 64px 40px;
+      text-align: center;
+    }
+    .instagram-strip p { font-size: 15px; color: var(--gray); margin-bottom: 24px; }
+    .instagram-handle {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      color: var(--green-dark);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:nth-child(4) { grid-column: span 1; }
+      .gallery-item:nth-child(4) .photo-placeholder { aspect-ratio: 4/3; }
+    }
+    @media (max-width: 500px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:nth-child(4) { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 42 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 44 Q12 47 6 46 M24 44 Q30 47 36 46" stroke="#3b2208" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="17" y="32" width="8" height="14" rx="2" fill="#3b2208"/>
+        <ellipse cx="21" cy="28" rx="17" ry="10" fill="#2d5a1b"/>
+        <ellipse cx="13" cy="20" rx="12" ry="9" fill="#357320"/>
+        <ellipse cx="30" cy="18" rx="10" ry="8" fill="#357320"/>
+        <ellipse cx="21" cy="13" rx="10" ry="8" fill="#4a9128"/>
+        <ellipse cx="15" cy="7" rx="6" ry="5" fill="#5aab30"/>
+        <ellipse cx="27" cy="8" rx="5" ry="4" fill="#5aab30"/>
+      </svg>
+      <div class="nav-brand">ELLIS<span>TREE SERVICE</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Free Estimate</a>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Our Work</div>
+    <h1>Gallery</h1>
+    <p>A look at some of the jobs we've completed across Southern Illinois. Photos coming soon — check our Instagram for the latest.</p>
+  </div>
+</div>
+
+<section class="gallery-section">
+  <div class="gallery-inner">
+
+    <div style="text-align:center;padding:80px 40px;background:var(--cream);border:1px solid var(--border);">
+      <div class="section-label" style="text-align:center;">Coming Soon</div>
+      <h2 style="font-family:Georgia,serif;font-size:36px;margin:12px 0;">Gallery Under Construction</h2>
+      <p style="font-size:15px;color:var(--gray);max-width:480px;margin:0 auto 32px;">We are putting together photos of our work across Southern Illinois. Check back soon — or follow us on Instagram for the latest.</p>
+      <a href="http://instagram.com/ellistreeil" target="_blank" class="btn btn-primary">Follow @ellistreeil</a>
+    </div>
+
+    <div class="gallery-grid" style="display:none;">
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Tree Removal — Murphysboro</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Crown Trimming — Carbondale</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Stump Grinding — Ava</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add wide/landscape photo — before &amp; after or crew shot
+        </div>
+        <div class="gallery-label">Before &amp; After</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Emergency Cleanup — Du Quoin</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Tree Removal — Benton</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Trimming — Marion</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Stump Grinding — Herrin</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-placeholder">
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="32" rx="3" stroke="#a09890" stroke-width="2"/><circle cx="18" cy="22" r="5" stroke="#a09890" stroke-width="2"/><path d="M4 36l10-10 8 8 6-6 16 12" stroke="#a09890" stroke-width="2" stroke-linecap="round"/></svg>
+          Add photo
+        </div>
+        <div class="gallery-label">Planting — Carbondale</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM STRIP -->
+<section class="instagram-strip">
+  <div class="section-label" style="text-align:center;">Follow Along</div>
+  <h2 class="section-h2" style="text-align:center;margin-bottom:16px;">See our latest work on Instagram</h2>
+  <p>We post photos of jobs, before-and-afters, and crew updates regularly.</p>
+  <a href="http://instagram.com/ellistreeil" target="_blank" class="instagram-handle">@ellistreeil</a>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--green-dark);padding:64px 40px;text-align:center;">
+  <h2 style="font-size:36px;color:#fff;margin-bottom:12px;">Like what you see?</h2>
+  <p style="font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:32px;">Get in touch for a free estimate on your project.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="contact.html" class="btn btn-outline-white">Get a Free Estimate</a>
+    <a href="tel:6186844566" class="btn btn-outline-white">Call 618-684-4566</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div><div class="footer-brand">ELLIS<span>TREE SERVICE</span></div><p class="footer-tagline">Family owned &amp; operated since 1955. Serving Southern Illinois with pride for over 70 years.</p></div>
+      <div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About Us</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html#trimming">Trimming &amp; Removal</a><a href="services.html#stump">Stump Grinding</a><a href="services.html#planting">Planting</a><a href="services.html#emergency">Emergency Cleanup</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>168 Simpson Road<br>Ava, IL 62907</p><p style="margin-top:8px;">(618) 684-4566</p><p style="margin-top:4px;">(618) 319-3544<br><span style="font-size:11px;color:#4a6a38;">Emergency</span></p><p style="margin-top:8px;">Mon–Fri 8am–5pm</p></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ELLIS TREE SERVICE · AVA, IL · ALL RIGHTS RESERVED</p>
+      <div class="footer-social"><a href="http://instagram.com/ellistreeil" target="_blank">Instagram</a><a href="https://www.facebook.com/share/1ASiptUKjM/" target="_blank">Facebook</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

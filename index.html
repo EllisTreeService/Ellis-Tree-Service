@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ellis Tree Service has served Southern Illinois for over 70 years. Tree removal, trimming, stump grinding &amp; emergency cleanup. Free estimates — (618) 684-4566."/>
+  <title>Ellis Tree Service | Tree Removal &amp; Trimming in Ava, IL</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ellis Tree Service",
+    "image": "https://www.ellistreeservice.com/images/ellis-logo.svg",
+    "description": "Ellis Tree Service has proudly served Southern Illinois for over 70 years. Expert tree removal, trimming, stump grinding, planting, and emergency cleanup for residential and commercial properties.",
+    "url": "https://www.ellistreeservice.com",
+    "telephone": "(618) 684-4566",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "168 Simpson Road",
+      "addressLocality": "Ava",
+      "addressRegion": "IL",
+      "postalCode": "62907",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.8781488,
+      "longitude": -89.4096024
+    },
+    "openingHours": ["Mo-Fr 08:00-17:00"],
+    "areaServed": ["Ava, IL","Murphysboro, IL","Du Quoin, IL","Carbondale, IL","Benton, IL","Herrin, IL","Marion, IL"],
+    "sameAs": ["http://instagram.com/ellistreeil","https://www.facebook.com/share/1ASiptUKjM/"]
+  }
+  <\/script>
+  <style>
+    /* ── HOME SPECIFIC ── */
+    .hero {
+      background: var(--cream);
+      padding: 88px 40px;
+    }
+    .hero-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      color: var(--green-dark);
+      letter-spacing: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      color: var(--black);
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+    .hero h1 em { color: var(--green-dark); font-style: normal; }
+    .hero-sub {
+      font-size: 15px;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-right { display: flex; flex-direction: column; gap: 20px; }
+    .hero-badges { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .hero-badge {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 22px 20px;
+    }
+    .hero-badge-num {
+      font-family: Georgia, serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1;
+    }
+    .hero-badge-label {
+      font-size: 10px;
+      color: var(--gray-light);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+    .hero-quote {
+      font-family: Georgia, serif;
+      font-size: 16px;
+      color: var(--gray);
+      font-style: italic;
+      line-height: 1.6;
+      border-left: 3px solid var(--green-dark);
+      padding-left: 18px;
+    }
+
+    /* services */
+    .services-section { padding: 80px 0; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 0;
+    }
+    .svc-card {
+      background: #fff;
+      padding: 36px 28px;
+      transition: background 0.2s;
+    }
+    .svc-card:hover { background: #faf8f4; }
+    .svc-icon { width: 44px; height: 44px; margin-bottom: 18px; }
+    .svc-title {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .svc-desc { font-size: 13px; color: #777; line-height: 1.7; margin-bottom: 18px; }
+    .svc-link {
+      font-size: 11px;
+      color: var(--green-dark);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .svc-link:hover { color: var(--green-mid); }
+
+    /* about strip */
+    .about-strip {
+      background: var(--cream);
+      padding: 80px 40px;
+    }
+    .about-strip-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4/3;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .stat {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid var(--border);
+    }
+    .stat-num {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--green-dark);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 10px;
+      color: var(--gray-light);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    /* cta banner */
+    .cta-banner {
+      background: var(--green-dark);
+      padding: 64px 40px;
+      text-align: center;
+    }
+    .cta-banner h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .cta-banner p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 32px;
+    }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* testimonials */
+    .testimonials { padding: 80px 40px; background: #fff; }
+    .testimonials-inner { max-width: 1140px; margin: 0 auto; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 0;
+    }
+    .testimonial {
+      border: 1px solid var(--border);
+      padding: 28px;
+    }
+    .testimonial-stars { color: var(--green-dark); font-size: 16px; margin-bottom: 14px; letter-spacing: 3px; }
+    .testimonial-text { font-family: Georgia, serif; font-size: 14px; color: var(--gray); font-style: italic; line-height: 1.7; margin-bottom: 18px; }
+    .testimonial-author { font-size: 12px; color: var(--gray-light); letter-spacing: 2px; text-transform: uppercase; }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { font-size: 36px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .about-strip-inner { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .hero { padding: 48px 20px; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 42 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 44 Q12 47 6 46 M24 44 Q30 47 36 46" stroke="#3b2208" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <rect x="17" y="32" width="8" height="14" rx="2" fill="#3b2208"/>
+        <ellipse cx="21" cy="28" rx="17" ry="10" fill="#2d5a1b"/>
+        <ellipse cx="13" cy="20" rx="12" ry="9" fill="#357320"/>
+        <ellipse cx="30" cy="18" rx="10" ry="8" fill="#357320"/>
+        <ellipse cx="21" cy="13" rx="10" ry="8" fill="#4a9128"/>
+        <ellipse cx="15" cy="7" rx="6" ry="5" fill="#5aab30"/>
+        <ellipse cx="27" cy="8" rx="5" ry="4" fill="#5aab30"/>
+      </svg>
+      <div class="nav-brand">ELLIS<span>TREE SERVICE</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Free Estimate</a>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Southern Illinois Tree Care</div>
+      <h1>Trusted tree care,<br><em>70 years</em> running.</h1>
+      <p class="hero-sub">From routine trimming to emergency storm cleanup, Ellis Tree Service handles it all — safely, efficiently, and with the care of a family business that's been rooted in this community since 1955.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="tel:6186844566" class="btn btn-outline">618-684-4566</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <div class="hero-badge-num">70+</div>
+          <div class="hero-badge-label">Years in Business</div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-num">Free</div>
+          <div class="hero-badge-label">Always Free Estimates</div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-num">24/7</div>
+          <div class="hero-badge-label">Emergency Line</div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-num">100%</div>
+          <div class="hero-badge-label">Family Owned</div>
+        </div>
+      </div>
+      <p class="hero-quote">Serving Ava, Murphysboro, Carbondale, Du Quoin, Benton, Herrin &amp; Marion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><div class="trust-dot"></div>Residential &amp; Commercial</div>
+    <div class="trust-item"><div class="trust-dot"></div>Emergency Services Available</div>
+    <div class="trust-item"><div class="trust-dot"></div>Free Estimates</div>
+    <div class="trust-item"><div class="trust-dot"></div>Jackson &amp; Franklin County</div>
+    <div class="trust-item"><div class="trust-dot"></div>Family Owned Since 1955</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-h2">Our Services</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="container">
+    <div class="services-grid">
+      <div class="svc-card">
+        <svg class="svc-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 40 Q14 43 8 42 M21 40 Q28 43 34 42" stroke="#3b2208" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="17" y="28" width="8" height="13" rx="2" fill="#3b2208"/>
+          <ellipse cx="21" cy="24" rx="14" ry="8" fill="#2d5a1b"/>
+          <ellipse cx="13" cy="16" rx="10" ry="7" fill="#357320"/>
+          <ellipse cx="30" cy="14" rx="9" ry="7" fill="#357320"/>
+          <ellipse cx="21" cy="10" rx="9" ry="7" fill="#4a9128"/>
+          <ellipse cx="15" cy="4" rx="5" ry="4" fill="#5aab30"/>
+          <ellipse cx="28" cy="5" rx="5" ry="4" fill="#5aab30"/>
+          <line x1="31" y1="22" x2="40" y2="13" stroke="#3b2208" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="36" y1="13" x2="40" y2="13" stroke="#3b2208" stroke-width="2" stroke-linecap="round"/>
+          <line x1="40" y1="13" x2="40" y2="9" stroke="#3b2208" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="svc-title">Trimming &amp; Removal</div>
+        <div class="svc-desc">Expert pruning, shaping, and full tree removal for residential and commercial properties of all sizes.</div>
+        <a href="services.html#trimming" class="svc-link">Learn More →</a>
+      </div>
+      <div class="svc-card">
+        <svg class="svc-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="28" r="11" fill="none" stroke="#3b2208" stroke-width="2"/>
+          <circle cx="22" cy="28" r="4" fill="#3b2208"/>
+          <line x1="22" y1="17" x2="22" y2="8" stroke="#2d5a1b" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="14" y1="21" x2="7" y2="15" stroke="#2d5a1b" stroke-width="2" stroke-linecap="round"/>
+          <line x1="30" y1="21" x2="37" y2="15" stroke="#2d5a1b" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="22" cy="37" rx="14" ry="4" fill="#e8e4dc"/>
+        </svg>
+        <div class="svc-title">Stump Grinding</div>
+        <div class="svc-desc">Complete stump removal using professional grinding equipment. Clean, efficient, no trace left behind.</div>
+        <a href="services.html#stump" class="svc-link">Learn More →</a>
+      </div>
+      <div class="svc-card">
+        <svg class="svc-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <line x1="22" y1="40" x2="22" y2="20" stroke="#3b2208" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M22 32 Q15 25 8 27" stroke="#2d5a1b" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M22 25 Q29 18 36 20" stroke="#2d5a1b" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="22" cy="40" rx="8" ry="3" fill="#e8e4dc"/>
+          <circle cx="8" cy="26" r="5" fill="#4a9128"/>
+          <circle cx="36" cy="19" r="5" fill="#4a9128"/>
+          <circle cx="22" cy="11" r="6" fill="#2d5a1b"/>
+        </svg>
+        <div class="svc-title">Planting</div>
+        <div class="svc-desc">New tree planting with expert species guidance suited to Southern Illinois soil and climate conditions.</div>
+        <a href="services.html#planting" class="svc-link">Learn More →</a>
+      </div>
+      <div class="svc-card">
+        <svg class="svc-icon" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 6 Q29 2 33 9 Q38 2 38 11 Q43 11 41 18 Q46 20 42 25 L22 36 L2 25 Q-2 20 3 18 Q1 11 6 11 Q6 2 11 9 Q15 2 22 6 Z" fill="#4a9128" opacity="0.25"/>
+          <path d="M22 10 Q27 6 30 12 Q34 6 34 13 Q38 13 37 18 Q41 20 38 24 L22 33 L6 24 Q3 20 7 18 Q6 13 10 13 Q10 6 14 12 Q18 6 22 10 Z" fill="#2d5a1b"/>
+          <line x1="22" y1="33" x2="22" y2="42" stroke="#3b2208" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <div class="svc-title">Emergency Cleanup</div>
+        <div class="svc-desc">Storm damage response and emergency tree removal available when you need us most.</div>
+        <a href="services.html#emergency" class="svc-link">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+  <div class="about-strip-inner">
+    <img src="buckettruck.jpg" alt="Ellis Tree Service bucket truck at a job site" style="width:100%;min-height:340px;object-fit:cover;display:block;">
+    <div>
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-h2">A family name you can trust.</h2>
+      <div class="section-rule"></div>
+      <p style="font-size:15px;color:var(--gray);line-height:1.8;margin-bottom:16px;">Ellis Tree Service has been caring for trees across Southern Illinois since 1955. What started as a family business is still a family business — the same commitment, the same community, seven decades later.</p>
+      <p style="font-size:15px;color:var(--gray);line-height:1.8;margin-bottom:32px;">We serve Ava, Murphysboro, Du Quoin, Carbondale, Benton, Herrin, Marion, and surrounding Jackson and Franklin County areas.</p>
+      <a href="about.html" class="btn btn-primary">Our Story</a>
+      <div class="about-stats">
+        <div class="stat"><div class="stat-num">70+</div><div class="stat-label">Years Serving IL</div></div>
+        <div class="stat"><div class="stat-num">Free</div><div class="stat-label">Estimates</div></div>
+        <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Emergency Line</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Family Owned</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-label">What Customers Say</div>
+    <h2 class="section-h2">Reviews</h2>
+    <div class="section-rule"></div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"Ellis Tree Service did a fantastic job removing a large oak that had fallen on our fence during the storm. Fast response, fair price, and cleaned everything up perfectly."</p>
+        <div class="testimonial-author">— Murphysboro, IL</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"Been using Ellis for years. They trimmed four big trees in our backyard and the results were great. Honest, hardworking people — you won't find better in Southern Illinois."</p>
+        <div class="testimonial-author">— Carbondale, IL</div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"Called them for an emergency after a storm took down a tree on our driveway. They were out the same day and had everything cleared by afternoon. Couldn't ask for more."</p>
+        <div class="testimonial-author">— Ava, IL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready to get started?</h2>
+  <p>Contact us today for a free, no-obligation estimate.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn btn-outline-white">Get a Free Estimate</a>
+    <a href="tel:6186844566" class="btn btn-outline-white">Call 618-684-4566</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">ELLIS<span>TREE SERVICE</span></div>
+        <p class="footer-tagline">Family owned &amp; operated since 1955. Serving Southern Illinois with pride for over 70 years.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html#trimming">Trimming &amp; Removal</a>
+        <a href="services.html#stump">Stump Grinding</a>
+        <a href="services.html#planting">Planting</a>
+        <a href="services.html#emergency">Emergency Cleanup</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>168 Simpson Road<br>Ava, IL 62907</p>
+        <p style="margin-top:8px;">(618) 684-4566<br><span style="font-size:11px;color:#4a6a38;">Office</span></p>
+        <p style="margin-top:4px;">(618) 319-3544<br><span style="font-size:11px;color:#4a6a38;">Emergency</span></p>
+        <p style="margin-top:8px;">Mon–Fri 8am–5pm<br>Sat by appointment</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 ELLIS TREE SERVICE · AVA, IL · ALL RIGHTS RESERVED</p>
+      <div class="footer-social">
+        <a href="http://instagram.com/ellistreeil" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1ASiptUKjM/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
