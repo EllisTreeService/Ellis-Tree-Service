@@ -125,7 +125,7 @@
   <div class="page-hero-inner">
     <div class="section-label">Our Work</div>
     <h1>Gallery</h1>
-    <p>A look at some of the jobs we've completed — Tag us on Facebook and Instagram! @ellistreeil #ellistreeil </p>
+    <p>A look at some of the jobs we've completed across Southern Illinois. Photos coming soon — check our Instagram for the latest.</p>
   </div>
 </div>
 
@@ -268,5 +268,33 @@
     </svg>
   </a>
 </div>
+
+<!-- Mobile Sticky Call Button -->
+<style>
+  .mobile-call-btn {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #2d5a1b;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-call-btn:hover { background: #357320; }
+  @media (max-width: 768px) {
+    .mobile-call-btn { display: block; }
+    body { padding-bottom: 56px; }
+  }
+</style>
+<a href="tel:6186844566" class="mobile-call-btn">📞 Call Now — (618) 684-4566</a>
 </body>
 </html>

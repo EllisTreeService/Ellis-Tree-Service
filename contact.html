@@ -361,5 +361,33 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg>
   </a>
 </div>
+
+<!-- Mobile Sticky Call Button -->
+<style>
+  .mobile-call-btn {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #2d5a1b;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-call-btn:hover { background: #357320; }
+  @media (max-width: 768px) {
+    .mobile-call-btn { display: block; }
+    body { padding-bottom: 56px; }
+  }
+</style>
+<a href="tel:6186844566" class="mobile-call-btn">📞 Call Now — (618) 684-4566</a>
 </body>
 </html>
